@@ -1,135 +1,136 @@
+# 🌐 Heena Jindal — Portfolio
 
-# Hi, I'm Heena Jindal 👋
+> **A living, interactive showcase of my AI/ML and full-stack engineering work**
 
-### AI/ML Engineer in the making | Python Developer | B.Tech Student
-
----
-
-## 🚀 About Me
-
-- 🎓 Third-year B.Tech student in AI/ML at Delhi Technical Campus (GGSIPU) — CGPA 8.99/10
-- 🛠️ I've shipped four full-stack AI/ML products, end-to-end — from model to live deployment
-- 🌱 Currently deepening my skills in **Generative AI and agentic AI systems**
-- 💼 Open to Software Engineering / AI-ML internships
-- 🌐 Portfolio: **[heena-portfolio-ten.vercel.app](https://heena-portfolio-ten.vercel.app/)**
+A dark, cinematic, single-page developer portfolio — built from scratch with vanilla HTML/CSS/JS, featuring a live neural-network canvas background, glassmorphism UI, scroll-driven project storytelling, and physics-based micro-interactions.
 
 ---
 
-## 🛠 Tech Stack
+## 🌟 Live Demo
 
-### Languages & Technologies
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-### Frameworks & Libraries
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-### Tools
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+> Portfolio: https://heena-portfolio-ten.vercel.app/
 
 ---
 
-# 🚀 Featured Projects
+## ✨ Features Built
 
-### 🚇 [MetroVerse](https://github.com/heena-jindal/MetroVerse)
+### 🧠 Living Neural Network Background
+- Custom canvas animation — 65 nodes, connected edges within a 155px threshold
+- Mouse-repulsion physics — nodes react to cursor proximity in real time
+- Fully re-renders on window resize
 
-An AI-powered Delhi Metro navigation platform built with **Next.js** and **Flask**. Dijkstra-based route planning across the Delhi Metro network, an ML-based crowd prediction model, fare estimation, digital ticketing, a Llama 3.3 AI chatbot assistant, and live metro status.
+### 🌌 Cosmic Depth Layer
+- Three slow-drifting nebula glow orbs (violet, cyan, emerald) behind all content
+- Independent drift animations (22s–32s loops) for a non-repetitive, "alive" feel
+- Disabled on mobile to protect performance and readability
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Groq API](https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+### 🖱️ Custom Cursor System
+- Dual cursor (dot + smooth-follower) with lerp-based easing
+- Expands and glows on hover over interactive elements
+- Auto-disabled on touch devices
 
----
+### 🃏 Glassmorphism UI + Micro-interactions
+- `backdrop-filter` blur cards across Projects, Achievements, and Education
+- 3D tilt-on-hover for Achievement and Education cards (perspective + rotateX/Y)
+- Magnetic buttons — CTAs pull toward the cursor on approach
+- Persistent neon glow on all gradient section titles
+- Idle pulsing glow animation on primary CTA buttons
 
-### 🌟 [VibeVerse](https://github.com/heena-jindal/VibeVerse)
+### 📊 Animated Data Visualization
+- Count-up number animations (CGPA, LeetCode solved) triggered on scroll via `IntersectionObserver`
+- Animated proficiency bars for language/skill breakdown
+- SVG donut chart for LeetCode difficulty distribution
 
-An AI-powered student wellness platform built with **Next.js** and **Flask**, combining real-time sentiment analysis (TextBlob), journaling, and mood-based music recommendations (Spotify API).
+### 🗂️ Scroll-Driven Project Showcase
+- "Sticky stack" scroll effect — project cards scale and fade as the next one arrives
+- Auto-playing project screenshot sliders per project
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TextBlob](https://img.shields.io/badge/TextBlob-00A98F?style=for-the-badge)
-![Spotify_API](https://img.shields.io/badge/Spotify_API-1DB954?style=for-the-badge&logo=spotify&logoColor=white)
-
----
-
-### 🎓 [Smart College Assistant](https://github.com/heena-jindal/smart-college-assistant)
-
-An AI-powered college management platform: a bilingual (Hindi/English) NLP chatbot trained on 500+ QA pairs, academic resource management, attendance tracking, and an interactive student dashboard.
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-
----
-
-### 🔐 [Fake Certificate Detection ML](https://github.com/heena-jindal/fake-certificate-detection-ml)
-
-A Random Forest classifier trained on 34,000+ certificate records to automatically flag fraudulent documents, achieving 84% classification accuracy after data preprocessing and feature engineering.
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+### ♿ Accessibility & Performance
+- Full `prefers-reduced-motion` support — disables decorative animation for users who need it
+- Responsive breakpoints at 1100px / 900px / 768px / 480px
+- Lightweight preloader (~700ms), no heavy dependencies beyond Lucide icons
 
 ---
 
-### 🏠 [House Price Prediction](https://github.com/heena-jindal/house-price-prediction-linear-regression)
+## 🛠️ Tech Stack
 
-A Machine Learning project that predicts house prices using Linear Regression and real-world housing datasets.
+### Frontend
+| Technology | Purpose |
+|---|---|
+| HTML5 | Semantic structure, 8 sections |
+| CSS3 (custom, no framework) | Theming via CSS variables, glassmorphism, animations |
+| Vanilla JavaScript | Canvas rendering, IntersectionObservers, DOM interactions |
+| Lucide Icons | Iconography |
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Linear Regression](https://img.shields.io/badge/Linear%20Regression-0A66C2?style=for-the-badge)
-![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-
----
-
-## 📈 Currently Learning
-
-- Generative AI & Agentic AI Systems
-- System Design & Cloud Computing
-- Advanced Data Structures & Algorithms
-- Deep Learning
-
----
-
-## 📫 Connect With Me
-
-- 🌐 Portfolio: [heena-portfolio-ten.vercel.app](https://heena-portfolio-ten.vercel.app/)
-- 💼 LinkedIn: [linkedin.com/in/heena-jindal-46581231a](https://www.linkedin.com/in/heena-jindal-46581231a/)
-- 📧 Email: hjindal918@gmail.com
-- 💻 LeetCode: [70+ problems solved](https://leetcode.com/u/heena03/)
+### Deployment
+| Technology | Purpose |
+|---|---|
+| Vercel | Static hosting + CDN |
+| GitHub | Source control, CI trigger for Vercel |
 
 ---
 
-## 📊 GitHub Stats
+## 🏗️ Project Structure
 
-![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=heena-jindal&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=heena-jindal&layout=compact&theme=tokyonight)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=heena-jindal&theme=tokyonight)
+```
+heena-portfolio/
+├── index.html                   # All 8 sections: Name, Hero, About,
+│                                 # Projects, Skills, Education,
+│                                 # Achievements, Contact
+├── style.css                    # Theming, glassmorphism, animations,
+│                                 # responsive breakpoints
+├── script.js                    # Canvas engine, cursor, scroll
+│                                 # observers, micro-interactions
+├── metroverse_screenshot/       # MetroVerse project images
+├── vibeverse_screenshot/        # VibeVerse project images
+└── Heena_Jindal_Resume.pdf      # Downloadable resume
+```
 
 ---
 
-⭐ Consistently learning, building, and improving every day.
+## 🚀 Local Setup
+
+This is a static site — no build step, no dependencies to install.
+
+```bash
+git clone https://github.com/heena-jindal/heena-portfolio.git
+cd heena-portfolio
+# open index.html directly, or serve it:
+npx serve .
+```
+
+---
+
+## 📄 Sections
+
+| Section | Content |
+|---|---|
+| Name Intro | Animated name reveal, click-to-scroll |
+| Hero | Role typing animation, CTA buttons |
+| About | Bio, current focus, learning goals |
+| Projects | 5 featured projects with live demos + repos |
+| Skills | Languages, frameworks, tools |
+| Education | Semester-by-semester academic roadmap |
+| Achievements | Certifications, hackathons, leadership |
+| Contact | Email, socials, direct contact form |
+
+---
+
+## 🔜 Roadmap
+
+- [ ] Blog / "Currently Building" section for in-progress GenAI work
+- [ ] Dark/Light theme toggle
+- [ ] Custom domain (heenajindal.dev or similar)
+- [ ] Open Graph banner image (currently reusing a project screenshot)
+- [ ] Lighthouse performance audit + optimization pass
+
+---
+
+## 👩‍💻 Author
+
+**Heena Jindal**
+B.Tech AI/ML Student | Delhi
+Building AI-powered products with Python, Flask, Next.js and ML
+
+[![GitHub](https://img.shields.io/badge/GitHub-heena--jindal-black?logo=github)](https://github.com/heena-jindal)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Heena_Jindal-blue?logo=linkedin)](https://www.linkedin.com/in/heena-jindal-46581231a)
