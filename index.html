@@ -3,21 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heena Jindal | AI Engineer in Progress</title>
+    <title>Heena Jindal | AI & ML Engineer</title>
     <meta name="description" content="Portfolio of Heena Jindal — Aspiring AI/ML Engineer, Python Developer, and B.Tech student building intelligent software that makes a real-world impact.">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1120'/%3E%3Ctext x='32' y='40' font-family='Arial,sans-serif' font-weight='700' font-size='26' fill='%2300d4ff' text-anchor='middle'%3EHJ%3C/text%3E%3C/svg%3E">
-
-    <!-- Open Graph / Social Preview -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Heena Jindal | AI Engineer in Progress">
-    <meta property="og:description" content="Portfolio of Heena Jindal — Aspiring AI/ML Engineer, Python Developer, and B.Tech student building intelligent software that makes a real-world impact.">
-    <meta property="og:image" content="metroverse_screenshot/01-home.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Heena Jindal | AI Engineer in Progress">
-    <meta name="twitter:description" content="Portfolio of Heena Jindal — Aspiring AI/ML Engineer, Python Developer, and B.Tech student building intelligent software that makes a real-world impact.">
-    <meta name="twitter:image" content="metroverse_screenshot/01-home.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@1.26.0"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,9 +24,6 @@
 
     <!-- Neural Network Canvas Background -->
     <canvas id="neural-canvas"></canvas>
-    <div class="cosmic-orb orb-1"></div>
-    <div class="cosmic-orb orb-2"></div>
-    <div class="cosmic-orb orb-3"></div>
 
     <!-- Preloader -->
     <div class="preloader" id="preloader">
@@ -66,88 +50,79 @@
     </section>
 
     <!-- ========== SLIDE 2: HERO / INTRO ========== -->
-    <div class="hero-buttons">
-
-    <a href="#projects" class="primary-btn">
-        Explore My Work
-    </a>
-
-    <a href="Heena_Jindal_Resume.pdf"
-       target="_blank"
-       class="secondary-btn">
-
-        Download Resume
-
-    </a>
-
-    <a href="#contact"
-       class="outline-btn">
-
-        Let's Connect
-
-    </a>
-
-</div>
+    <section class="slide slide-hero" id="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-avail-badge">
+                    <span class="badge-live-dot"></span>
+                    Available for Internships &amp; Collaborations
+                </div>
+                <h1 class="hero-name">Heena Jindal</h1>
+                <div class="hero-role-line">
+                    <span class="role-prefix">I'm a </span><span id="typed-role"></span>
+                </div>
+                <div class="hero-keywords">
+                    <span class="kw-chip">🤖 Machine Learning</span>
+                    <span class="kw-chip">🐍 Python</span>
+                    <span class="kw-chip">⚡ Deep Learning</span>
+                    <span class="kw-chip">🔍 NLP</span>
+                </div>
+                <div class="hero-cta-row">
+                    <a href="#projects" class="cta-btn cta-primary hover-target" id="cta-projects">
+                        <i data-lucide="folder-open"></i> Projects
+                    </a>
+                    <a href="Heena_Jindal_Resume_0.2.pdf"
+                        target="_blank"
+                        class="cta-btn cta-ghost hover-target">
+                        <i data-lucide="file-text"></i> Resume
+                    </a>
+                    <a href="https://github.com/heena-jindal" target="_blank" class="cta-btn cta-ghost hover-target" id="cta-github">
+                        <i data-lucide="github"></i> GitHub
+                    </a>
+                    <a href="https://leetcode.com/u/heena03" target="_blank" class="cta-btn cta-ghost hover-target" id="cta-leetcode">
+                        <i data-lucide="code"></i> LeetCode
+                    </a>
+                    <a href="#contact" class="cta-btn cta-ghost hover-target" id="cta-contact">
+                        <i data-lucide="mail"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-line-wrap">
+            <span>Scroll</span>
+            <div class="scroll-vert-line"></div>
+        </div>
+    </section>
 
     <!-- ========== SLIDE 3: ABOUT / PERSPECTIVE ========== -->
-    <span class="hero-label">
-    AI Engineer in Progress
-</span>
+    <section class="slide slide-about" id="about">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="sec-label">01 / Perspective</span>
+                <h2 class="sec-title">Who <span class="grad-text">Am I?</span></h2>
+            </div>
+            <div class="about-grid fade-up">
 
-<h1 class="hero-title">
-    Building Reliable AI Systems,
-    <br>
-    <span class="gradient-text">
-        One Project at a Time.
-    </span>
-</h1>
-
-<p class="hero-description">
-
-    I'm a third-year B.Tech student passionate about Artificial Intelligence and modern AI Engineering.
-    I build intelligent applications using Retrieval-Augmented Generation (RAG), autonomous AI agents,
-    structured LLM outputs, and machine learning to solve practical problems.
-
-    Every project I build helps me become a better engineer—through experimentation,
-    debugging, and continuous learning.
-
-</p>
+                <!-- Box 1: Who Am I -->
+                <div class="about-box box-violet">
+                    <div class="abox-icon"><i data-lucide="user-circle-2"></i></div>
+                    <h3>Who Am I</h3>
+                    <p>A B.Tech AI/ML student at Delhi Technical Campus maintaining a 9.0 CGPA, passionate about building intelligent systems that bridge complex data and real-world impact. I love turning abstract ideas into products people actually use.</p>
+                    <div class="abox-tags">
+                        <span>Problem Solver</span><span>Creative Thinker</span><span>Team Player</span>
+                    </div>
+                </div>
 
                 <!-- Box 2: Current Focus -->
                 <div class="about-box box-blue">
                     <div class="abox-icon"><i data-lucide="target"></i></div>
-                    <div class="current-focus">
-
-    <div class="focus-card">
-
-        🤖
-        <h4>Building</h4>
-
-        <p>
-            Production-oriented AI applications using
-            RAG, LangGraph and LLM evaluation.
-        </p>
-
-    </div>
-    <div class="focus-card">
-        ☁️
-        <h4>Learning</h4>
-        <p>
-            Cloud Computing,
-            scalable backend systems,
-            and AI deployment.
-        </p>
-    </div>
-    <div class="focus-card">
-        🧠
-        <h4>Practicing</h4>
-        <p>
-            Data Structures &
-            Algorithms for
-            Software Engineering interviews.
-        </p>
-    </div>
-</div>
+                    <h3>Current Focus</h3>
+                    <ul class="focus-list">
+                        <li><span>🚀</span> Expanding VibeVerse with advanced AI-powered features</li>
+                        <li><span>🧮</span> Strengthening DSA foundations for SWE interviews</li>
+                        <li><span>☁️</span> Exploring Cloud Computing &amp; scalable systems</li>
+                        <li><span>🤖</span> Deep diving into LLM agents and modern AI workflows</li>
+                    </ul>
                 </div>
 
                 <!-- Box 3: Passion & Goals -->
@@ -180,327 +155,251 @@
     </section>
 
     <!-- ========== SLIDE 4: FEATURED PROJECTS ========== -->
-    <section id="journey" class="journey-section">
+    <section class="slide slide-projects" id="projects">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="sec-label">02 / Work</span>
+                <h2 class="sec-title">Featured <span class="grad-text">Projects</span></h2>
+            </div>
+        </div>
 
-<div class="section-title">
-<h2>AI Engineering Journey</h2>
+        <div class="proj-stack-wrap">
+            <!-- Project 1: MetroVerse -->
+            <div class="proj-sticky-item" id="proj-2">
+                <div class="proj-card">
 
-<p>
-Every project has been a step toward becoming an AI Engineer. My learning path
-has evolved from programming fundamentals to building intelligent systems that
-solve real-world problems.
-</p>
+                    <div class="proj-img-col">
+                        <div class="img-slider-wrap">
+                            <div class="slider-track">
+
+                                <!-- Replace these with your screenshot names -->
+                                <div class="slider-track">
+
+    <img src="metroverse_screenshot/01-home.png" alt="MetroVerse Home">
+    <img src="metroverse_screenshot/02-dashboard.png" alt="Dashboard">
+    <img src="metroverse_screenshot/03-route-planner.png" alt="Route Planner">
+    <img src="metroverse_screenshot/04-navigation.png" alt="Live Navigation">
+    <img src="metroverse_screenshot/05-chatbot.png" alt="AI Assistant">
+    <img src="metroverse_screenshot/06-metro-card.png" alt="Metro Card">
+    <img src="metroverse_screenshot/07-buy-ticket.png" alt="Buy Ticket">
+    <img src="metroverse_screenshot/08-qr-scanner.png" alt="QR Scanner">
+    <img src="metroverse_screenshot/09-tourist-guide.png" alt="Tourist Guide">
+    <img src="metroverse_screenshot/10-city-selection.png" alt="City Selection">
+
+    <!-- Duplicate for infinite slider -->
+
+    <img src="metroverse_screenshot/01-home.png" alt="MetroVerse Home">
+    <img src="metroverse_screenshot/02-dashboard.png" alt="Dashboard">
+    <img src="metroverse_screenshot/03-route-planner.png" alt="Route Planner">
+    <img src="metroverse_screenshot/04-navigation.png" alt="Live Navigation">
+    <img src="metroverse_screenshot/05-chatbot.png" alt="AI Assistant">
+    <img src="metroverse_screenshot/06-metro-card.png" alt="Metro Card">
+    <img src="metroverse_screenshot/07-buy-ticket.png" alt="Buy Ticket">
+    <img src="metroverse_screenshot/08-qr-scanner.png" alt="QR Scanner">
+    <img src="metroverse_screenshot/09-tourist-guide.png" alt="Tourist Guide">
+    <img src="metroverse_screenshot/10-city-selection.png" alt="City Selection">
 
 </div>
 
-<div class="journey-grid">
+                            </div>
+                        </div>
+                    </div>
 
-<div class="journey-card">
-<h3>Python</h3>
-<p>Programming Fundamentals</p>
-</div>
+                    <div class="proj-info-col">
 
-<div class="journey-card">
-<h3>Machine Learning</h3>
-<p>Scikit-learn, Data Analysis</p>
-</div>
+                        <div class="proj-badge">
+                            🚇 Flagship Full Stack AI Project
+                        </div>
 
-<div class="journey-card">
-<h3>Deep Learning</h3>
-<p>Neural Networks Fundamentals</p>
-</div>
+                        <h3>MetroVerse AI</h3>
 
-<div class="journey-card">
-<h3>Prompt Engineering</h3>
-<p>Modern LLM Workflows</p>
-</div>
+                        <p class="proj-desc">
+                            <strong>Problem:</strong>
+                            Metro commuters rely on multiple apps for route planning,
+                            ticketing, crowd information and station guidance.
+                        </p>
 
-<div class="journey-card">
-<h3>RAG Systems</h3>
-<p>Embeddings, ChromaDB, Retrieval</p>
-</div>
+                        <p class="proj-desc">
+                            <strong>Solution:</strong>
+                            Built a unified AI-powered metro assistant integrating smart
+                            routing, ML crowd prediction, conversational AI,
+                            live navigation and digital ticketing into one platform.
+                        </p>
 
-<div class="journey-card">
-<h3>Agentic AI</h3>
-<p>LangGraph • Tool Calling • Evaluation</p>
-</div>
+                        <ul class="proj-feat-list">
+                            <li>Dijkstra-based shortest path routing across <strong>288 metro stations</strong></li>
 
-</div>
+                            <li>Random Forest ML model trained on <strong>34,000+ samples</strong> with <strong>84% prediction accuracy</strong></li>
 
-</section>
+                            <li>Groq Llama 3.3 powered AI assistant with session memory</li>
 
-            <!-- Project 1: AI Study Companion -->
-<div class="proj-sticky-item" id="proj-1">
+                            <li>QR ticketing, metro card management and real-time journey navigation</li>
 
-    <div class="proj-card">
+                            <li>Push notifications, QR station scanner and nearby tourist guide</li>
+                        </ul>
 
-        <div class="proj-img-col">
+                        <div class="proj-tech-row">
+                            <span>Next.js</span>
+                            <span>Flask</span>
+                            <span>Python</span>
+                            <span>Random Forest</span>
+                            <span>Groq API</span>
+                            <span>Supabase</span>
+                            <span>GTFS</span>
+                            <span>JavaScript</span>
+                        </div>
 
-            <div class="img-slider-wrap">
+                        <div class="proj-link-row">
 
-                <div class="slider-track">
+                            <a href="https://metro-verse.vercel.app/"
+                            target="_blank"
+                            class="plbtn plbtn-fill hover-target">
+                                <i data-lucide="external-link"></i>
+                                Live Demo
+                            </a>
 
-                    <img src="study_companion_screenshot/01-home.png" alt="AI Study Companion">
-                    <img src="study_companion_screenshot/02-upload-pdf.png" alt="PDF Upload">
-                    <img src="study_companion_screenshot/03-chat.png" alt="RAG Chat">
-                    <img src="study_companion_screenshot/04-quiz.png" alt="Quiz Generation">
-                    <img src="study_companion_screenshot/05-agent.png" alt="Agent">
-                    <img src="study_companion_screenshot/06-history.png" alt="History">
+                            <a href="https://github.com/heena-jindal/MetroVerse"
+                            target="_blank"
+                            class="plbtn plbtn-outline hover-target">
+                                <i data-lucide="github"></i>
+                                GitHub
+                            </a>
 
-                    <!-- Duplicate for Infinite Slider -->
+                        </div>
 
-                    <img src="study_companion_screenshot/01-home.png" alt="">
-                    <img src="study_companion_screenshot/02-upload-pdf.png" alt="">
-                    <img src="study_companion_screenshot/03-chat.png" alt="">
-                    <img src="study_companion_screenshot/04-quiz.png" alt="">
-                    <img src="study_companion_screenshot/05-agent.png" alt="">
-                    <img src="study_companion_screenshot/06-history.png" alt="">
+                    </div>
 
                 </div>
-
             </div>
 
-        </div>
-
-        <div class="proj-info-col">
-
-            <div class="proj-badge">
-                ⭐ Featured AI Engineering Project
+            <!-- Project 2: VibeVerse -->
+            <div class="proj-sticky-item" id="proj-1">
+                <div class="proj-card">
+                    <div class="proj-img-col">
+                        <div class="img-slider-wrap">
+                            <div class="slider-track">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003112.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003144.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003206.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003241.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003304.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003333.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003432.png" alt="VibeVerse">
+                                <!-- duplicates for loop -->
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003112.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003144.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003206.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003241.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003304.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003333.png" alt="VibeVerse">
+                                <img src="vibeverse_screenshot/Screenshot 2026-07-09 003432.png" alt="VibeVerse">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-info-col">
+                        <div class="proj-badge">🌟 Top Priority Project</div>
+                        <h3>VibeVerse</h3>
+                        <p class="proj-desc"><strong>Problem:</strong> Students face anxiety and loneliness in new environments without personalized emotional support.</p>
+                        <p class="proj-desc"><strong>Solution:</strong> An AI-powered companion that understands sentiment and provides tailored wellness tools.</p>
+                        <ul class="proj-feat-list">
+                            <li>Analyzes mood instantly using Llama 3.3 70B via Groq API</li>
+                            <li>Personalized music &amp; movie recommendations based on sentiment</li>
+                            <li>Daily journaling and streak tracking to build confidence</li>
+                        </ul>
+                        <div class="proj-tech-row">
+                            <span>Python</span><span>Flask</span><span>Llama 3.3</span><span>SQLite</span><span>HTML/CSS</span>
+                        </div>
+                        <div class="proj-link-row">
+                            <a href="https://vibe-verse-phi.vercel.app/" target="_blank" class="plbtn plbtn-fill hover-target"><i data-lucide="external-link"></i> Live Demo</a>
+                            <a href="https://github.com/heena-jindal/VibeVerse" target="_blank" class="plbtn plbtn-outline hover-target"><i data-lucide="github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3>AI Study Companion</h3>
-
-            <p class="proj-desc">
-
-                <strong>Problem:</strong>
-
-                Traditional AI study assistants generate answers without verifying
-                whether responses are grounded in study material, making them
-                unreliable for learning and unable to adapt to a student's progress.
-
-            </p>
-
-            <p class="proj-desc">
-
-                <strong>Solution:</strong>
-
-                Built a production-oriented AI learning assistant combining
-                Retrieval-Augmented Generation (RAG), Structured Outputs,
-                LangGraph autonomous agents, persistent learning analytics,
-                and LLM evaluation to generate reliable, personalized quizzes
-                from uploaded study material.
-
-            </p>
-
-            <ul class="proj-feat-list">
-
-                <li>📄 Retrieval-Augmented Generation with ChromaDB for grounded responses.</li>
-
-                <li>🤖 LangGraph ReAct Agent that autonomously selects tools based on user requests.</li>
-
-                <li>✅ Structured quiz generation using Groq Structured Outputs and Pydantic validation.</li>
-
-                <li>📊 SQLite-based learning history to identify weak topics and personalize quizzes.</li>
-
-                <li>🔍 LLM-as-a-Judge evaluation pipeline to detect hallucinated responses.</li>
-
-                <li>🚀 Modular backend architecture focused on reliability and maintainability.</li>
-
-            </ul>
-
-            <div class="proj-tech-row">
-
-                <span>Python</span>
-
-                <span>Flask</span>
-
-                <span>Groq</span>
-
-                <span>LangGraph</span>
-
-                <span>ChromaDB</span>
-
-                <span>Pydantic</span>
-
-                <span>SQLite</span>
-
-                <span>RAG</span>
-
+            <!-- Project 3: Smart College Assistant -->
+            <div class="proj-sticky-item" id="proj-2">
+                <div class="proj-card">
+                    <div class="proj-img-col">
+                        <div class="img-slider-wrap">
+                            <div class="card-slider-track">
+                                <img src="college_screenshot/homepage-main.png" alt="Smart College Assistant">
+                                <img src="college_screenshot/dashboard-main.png" alt="Smart College Assistant">
+                                <img src="college_screenshot/chatbot-main.png" alt="Smart College Assistant">
+                                <img src="college_screenshot/homepage-main.png" alt="Smart College Assistant">
+                                <img src="college_screenshot/dashboard-main.png" alt="Smart College Assistant">
+                                <img src="college_screenshot/chatbot-main.png" alt="Smart College Assistant">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proj-info-col">
+                        <div class="proj-badge proj-badge-indigo">🎓 Academic Project</div>
+                        <h3>Smart College Assistant</h3>
+                        <p class="proj-desc"><strong>Problem:</strong> Managing college resources and getting academic assistance was scattered and inefficient for students.</p>
+                        <p class="proj-desc"><strong>Solution:</strong> A centralized smart web platform to streamline student interaction with academic resources.</p>
+                        <ul class="proj-feat-list">
+                            <li>Responsive, student-focused interface for seamless navigation</li>
+                            <li>Smart assistant answering common academic queries via NLP</li>
+                            <li>AI-powered face recognition &amp; document management</li>
+                        </ul>
+                        <div class="proj-tech-row">
+                            <span>TypeScript</span><span>React</span><span>HTML/CSS</span><span>NLP</span>
+                        </div>
+                        <div class="proj-link-row">
+                            <a href="https://github.com/heena-jindal/smart-college-assistant" target="_blank" class="plbtn plbtn-fill hover-target"><i data-lucide="github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="proj-link-row">
-
-                <a href="https://ai-study-companion-m5qc.onrender.com"
-                   target="_blank"
-                   class="plbtn plbtn-fill hover-target">
-
-                    <i data-lucide="external-link"></i>
-
-                    Live Demo
-
-                </a>
-
-                <a href="https://github.com/heena-jindal/AI_study_Companion"
-                   target="_blank"
-                   class="plbtn plbtn-outline hover-target">
-
-                    <i data-lucide="github"></i>
-
-                    GitHub
-
-                </a>
-
+            <!-- Project 4: Fake Certificate Detection -->
+            <div class="proj-sticky-item" id="proj-3">
+                <div class="proj-card proj-card-wide">
+                    <div class="proj-info-col" style="max-width:100%">
+                        <div class="proj-badge proj-badge-orange">🔍 ML Project</div>
+                        <h3>Fake Certificate Detection ML</h3>
+                        <p class="proj-desc"><strong>Problem:</strong> Manual certificate verification is slow and error-prone, letting forged documents slip through undetected.</p>
+                        <p class="proj-desc"><strong>Solution:</strong> A Machine Learning model that automatically classifies and detects manipulated certificates based on data patterns.</p>
+                        <ul class="proj-feat-list">
+                            <li>Automates candidate evaluation &amp; document screening pipelines</li>
+                            <li>Significantly reduces manual HR screening effort and time</li>
+                            <li>Rigorous data preprocessing &amp; cleaning ensuring high accuracy</li>
+                        </ul>
+                        <div class="proj-tech-row">
+                            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+                        </div>
+                        <div class="proj-link-row">
+                            <a href="https://github.com/heena-jindal/fake-certificate-detection-ml.git" target="_blank" class="plbtn plbtn-fill hover-target"><i data-lucide="github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-
-    </div>
-
-</div>
-            <p class="proj-desc">
-
-<strong>Problem:</strong>
-
-Many social platforms focus on engagement metrics rather than meaningful user
-well-being, making online interactions overwhelming and emotionally disconnected.
-
-</p>
-
-<p class="proj-desc">
-
-<strong>Solution:</strong>
-
-VibeVerse is an AI-powered student wellness platform designed to create a more
-supportive digital environment. It combines intelligent recommendations,
-mood-aware interactions, and personalized experiences to encourage healthier
-online engagement while exploring modern AI-driven personalization techniques.
-
-</p>
-
-<ul class="proj-feat-list">
-
-<li>🧠 AI-powered personalized recommendations.</li>
-
-<li>😊 Mood-aware interaction and user experience.</li>
-
-<li>💬 Intelligent chatbot assistance for students.</li>
-
-<li>📈 Personalized content based on user activity.</li>
-
-<li>🎨 Modern responsive interface with interactive design.</li>
-
-</ul>
-
-<div class="proj-tech-row">
-
-<span>Python</span>
-
-<span>Flask</span>
-
-<span>Machine Learning</span>
-
-<span>SQLite</span>
-
-<span>HTML</span>
-
-<span>CSS</span>
-
-</div>
-            <p class="proj-desc">
-
-<strong>Problem:</strong>
-
-Students often struggle to access academic information quickly because it is
-distributed across multiple systems and departments.
-
-</p>
-
-<p class="proj-desc">
-
-<strong>Solution:</strong>
-
-Developed an AI-powered Smart College Assistant that centralizes academic
-information, automates attendance using face recognition, and answers student
-queries through an NLP-based chatbot to improve the campus experience.
-
-</p>
-
-<ul class="proj-feat-list">
-
-<li>🎓 AI chatbot for academic queries.</li>
-
-<li>📸 Face Recognition Attendance System.</li>
-
-<li>📅 Student information management.</li>
-
-<li>🧠 NLP-based intent classification.</li>
-
-<li>📊 Dashboard for administrators.</li>
-
-</ul>
-
-<div class="proj-tech-row">
-
-<span>Python</span>
-
-<span>Flask</span>
-
-<span>OpenCV</span>
-
-<span>Scikit-learn</span>
-
-<span>SQLite</span>
-
-<span>NLP</span>
-
-</div>
-            <p class="proj-desc">
-
-<strong>Problem:</strong>
-
-Recruiters spend significant time manually reviewing resumes, making candidate
-screening slow and inconsistent.
-
-</p>
-
-<p class="proj-desc">
-
-<strong>Solution:</strong>
-
-Built an AI-powered Resume Ranker that analyzes resumes, extracts relevant
-skills using NLP techniques, compares them with job requirements, and ranks
-candidates to support faster and more objective hiring decisions.
-
-</p>
-
-<ul class="proj-feat-list">
-
-<li>📄 Resume parsing and text extraction.</li>
-
-<li>🧠 NLP-based skill identification.</li>
-
-<li>📊 Candidate ranking and scoring.</li>
-
-<li>⚡ Instant resume analysis.</li>
-
-<li>📈 Interactive recruiter dashboard.</li>
-
-</ul>
-
-<div class="proj-tech-row">
-
-<span>Python</span>
-
-<span>Streamlit</span>
-
-<span>NLP</span>
-
-<span>Pandas</span>
-
-<span>Scikit-learn</span>
-
-</div>
-           
+            <!-- Project 5: House Price Prediction -->
+            <div class="proj-sticky-item" id="proj-4">
+                <div class="proj-card proj-card-wide">
+                    <div class="proj-info-col" style="max-width:100%">
+                        <div class="proj-badge proj-badge-emerald">📈 ML Regression</div>
+                        <h3>House Price Prediction</h3>
+                        <p class="proj-desc"><strong>Problem:</strong> Buyers and real estate agents struggle to accurately estimate property values from complex multi-variable data.</p>
+                        <p class="proj-desc"><strong>Solution:</strong> A predictive ML regression model that estimates house prices given various real-world housing parameters.</p>
+                        <ul class="proj-feat-list">
+                            <li>Processes historical housing datasets to identify price trends</li>
+                            <li>Linear Regression delivering fast and accurate predictions</li>
+                            <li>Reliable data-driven baseline for property valuation</li>
+                        </ul>
+                        <div class="proj-tech-row">
+                            <span>Python</span><span>Machine Learning</span><span>Pandas</span><span>Matplotlib</span>
+                        </div>
+                        <div class="proj-link-row">
+                            <a href="https://github.com/heena-jindal" target="_blank" class="plbtn plbtn-fill hover-target"><i data-lucide="github"></i> GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /proj-stack-wrap -->
+    </section>
 
     <!-- ========== SLIDE 5: TECH STACK ========== -->
     <section class="slide slide-tech" id="skills">
@@ -536,19 +435,19 @@ candidates to support faster and more objective hiring decisions.
                         <div class="leet-donut-wrap">
                             <svg class="leet-svg" viewBox="0 0 120 120">
                                 <circle class="donut-bg" cx="60" cy="60" r="50"/>
-                                <circle class="donut-easy" cx="60" cy="60" r="50" stroke-dasharray="131.9 182.2" stroke-dashoffset="0"/>
-                                <circle class="donut-medium" cx="60" cy="60" r="50" stroke-dasharray="66.0 248.2" stroke-dashoffset="-131.9"/>
-                                <circle class="donut-hard" cx="60" cy="60" r="50" stroke-dasharray="22.0 292.2" stroke-dashoffset="-197.9"/>
+                                <circle class="donut-easy" cx="60" cy="60" r="50" stroke-dasharray="94 220" stroke-dashoffset="0"/>
+                                <circle class="donut-medium" cx="60" cy="60" r="50" stroke-dasharray="47 267" stroke-dashoffset="-94"/>
+                                <circle class="donut-hard" cx="60" cy="60" r="50" stroke-dasharray="16 298" stroke-dashoffset="-141"/>
                             </svg>
                             <div class="leet-center-label">
-                                <span class="leet-num count-up" data-count-target="70" data-count-suffix="+">0+</span>
+                                <span class="leet-num">50+</span>
                                 <span class="leet-sub">Solved</span>
                             </div>
                         </div>
                         <div class="leet-legend">
-                            <div class="leet-leg-row"><span class="ldot easy"></span>Easy<strong>~42</strong></div>
-                            <div class="leet-leg-row"><span class="ldot medium"></span>Medium<strong>~21</strong></div>
-                            <div class="leet-leg-row"><span class="ldot hard"></span>Hard<strong>~7</strong></div>
+                            <div class="leet-leg-row"><span class="ldot easy"></span>Easy<strong>~30</strong></div>
+                            <div class="leet-leg-row"><span class="ldot medium"></span>Medium<strong>~15</strong></div>
+                            <div class="leet-leg-row"><span class="ldot hard"></span>Hard<strong>~5</strong></div>
                         </div>
                     </div>
                     <div class="leet-focus-area">
@@ -606,7 +505,7 @@ candidates to support faster and more objective hiring decisions.
                 <div class="rm-item">
                     <div class="rm-year">2020</div>
                     <div class="rm-dot"></div>
-                    <div class="rm-card tilt-card">
+                    <div class="rm-card">
                         <div class="rm-badge rm-badge-school">Class X · CBSE</div>
                         <h3>Saai Memorial Girls School</h3>
                         <div class="rm-cgpa">90%</div>
@@ -620,7 +519,7 @@ candidates to support faster and more objective hiring decisions.
                 <div class="rm-item">
                     <div class="rm-year">2022</div>
                     <div class="rm-dot"></div>
-                    <div class="rm-card tilt-card">
+                    <div class="rm-card">
                         <div class="rm-badge rm-badge-school">Class XII · CBSE</div>
                         <h3>Sarvodya Kanya Vidyalaya</h3>
                         <div class="rm-cgpa">89%</div>
@@ -630,58 +529,30 @@ candidates to support faster and more objective hiring decisions.
                     </div>
                 </div>
 
-                <!-- B.Tech Sem 1 -->
+                <!-- B.Tech Sem 1–2 -->
                 <div class="rm-item">
                     <div class="rm-year">2024</div>
                     <div class="rm-dot rm-dot-college"></div>
-                    <div class="rm-card tilt-card rm-card-college">
-                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 1</div>
+                    <div class="rm-card rm-card-college">
+                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 1–2</div>
                         <h3>Delhi Technical Campus</h3>
-                        <div class="rm-cgpa" style="color:#60a5fa">8.2 CGPA</div>
+                        <div class="rm-cgpa" style="color:#60a5fa">9.2 CGPA</div>
                         <div class="rm-subjects">
                             <span>Python Programming</span><span>Engineering Maths</span><span>Data Structures</span><span>Digital Logic</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- B.Tech Sem 2 -->
+                <!-- B.Tech Sem 3–4 -->
                 <div class="rm-item">
-                    <div class="rm-year">2024</div>
+                    <div class="rm-year">2025</div>
                     <div class="rm-dot rm-dot-college"></div>
-                    <div class="rm-card tilt-card rm-card-college">
-                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 2</div>
+                    <div class="rm-card rm-card-college">
+                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 3–4</div>
                         <h3>Delhi Technical Campus</h3>
                         <div class="rm-cgpa" style="color:#60a5fa">8.8 CGPA</div>
                         <div class="rm-subjects">
-                            <span>Object-Oriented Programming</span><span>Discrete Maths</span><span>Computer Organization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- B.Tech Sem 3 -->
-                <div class="rm-item">
-                    <div class="rm-year">2025</div>
-                    <div class="rm-dot rm-dot-college"></div>
-                    <div class="rm-card tilt-card rm-card-college">
-                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 3</div>
-                        <h3>Delhi Technical Campus</h3>
-                        <div class="rm-cgpa" style="color:#60a5fa">9.2 CGPA</div>
-                        <div class="rm-subjects">
-                            <span>Machine Learning</span><span>Database Systems</span><span>Computer Networks</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- B.Tech Sem 4 -->
-                <div class="rm-item">
-                    <div class="rm-year">2025</div>
-                    <div class="rm-dot rm-dot-college"></div>
-                    <div class="rm-card tilt-card rm-card-college">
-                        <div class="rm-badge rm-badge-college">B.Tech AI/ML · Sem 4</div>
-                        <h3>Delhi Technical Campus</h3>
-                        <div class="rm-cgpa" style="color:#60a5fa">9.6 CGPA</div>
-                        <div class="rm-subjects">
-                            <span>Deep Learning</span><span>NLP</span><span>Operating Systems</span>
+                            <span>Machine Learning</span><span>Database Systems</span><span>Computer Networks</span><span>Deep Learning</span><span>NLP</span>
                         </div>
                     </div>
                 </div>
@@ -690,10 +561,10 @@ candidates to support faster and more objective hiring decisions.
                 <div class="rm-item">
                     <div class="rm-year">2026</div>
                     <div class="rm-dot rm-dot-active"></div>
-                    <div class="rm-card tilt-card rm-card-active">
-                        <div class="rm-badge rm-badge-active">Currently · Sem 5 · Overall 8.99 CGPA</div>
+                    <div class="rm-card rm-card-active">
+                        <div class="rm-badge rm-badge-active">Currently · Sem 5 · Overall 9.0 CGPA</div>
                         <h3>Delhi Technical Campus</h3>
-                        <div class="rm-cgpa" style="color:#34d399">8.99 CGPA Overall</div>
+                        <div class="rm-cgpa" style="color:#34d399">9.0 CGPA Overall</div>
                         <div class="rm-subjects">
                             <span>Cloud Computing</span><span>System Design</span><span>Advanced Algorithms</span><span>AI Ethics</span>
                         </div>
@@ -713,60 +584,60 @@ candidates to support faster and more objective hiring decisions.
             </div>
             <div class="achieve-grid fade-up">
 
-                <div class="ach-card tilt-card ach-research">
+                <div class="ach-card ach-research">
                     <div class="ach-icon">📄</div>
                     <div class="ach-type">Research</div>
                     <h3>Research Paper (Under Review)</h3>
                     <p>AI-Powered Smart College Assistant using NLP &amp; Face Recognition — submitted as a book chapter for academic publication.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-hack">
+                <div class="ach-card ach-hack">
                     <div class="ach-icon">🏆</div>
                     <div class="ach-type">Hackathon</div>
                     <h3>Smart India Hackathon 2025</h3>
                     <p>Participated in India's largest student innovation challenge, engineering real-world tech solutions under pressure.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-hack">
+                <div class="ach-card ach-hack">
                     <div class="ach-icon">💡</div>
                     <div class="ach-type">Hackathon</div>
                     <h3>Manthan Kriti Hackathon 2024</h3>
                     <p>Competed and volunteered at the college's premier tech innovation event, driving technical excellence.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-lead">
+                <div class="ach-card ach-lead">
                     <div class="ach-icon">🎯</div>
                     <div class="ach-type">Leadership</div>
                     <h3>Social Media Head · ACE DTC</h3>
                     <p>Leading digital strategy and social presence for the AI Computing &amp; Engineering club at Delhi Technical Campus.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-comm">
+                <div class="ach-card ach-comm">
                     <div class="ach-icon">🌐</div>
                     <div class="ach-type">Community</div>
                     <h3>All IPU Community · Member</h3>
                     <p>Active social media team member for one of the largest IPU student communities (2024–2025).</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-cert">
+                <div class="ach-card ach-cert">
                     <div class="ach-icon">🎓</div>
                     <div class="ach-type">Certificate</div>
                     <h3>Tata GenAI Data Analytics</h3>
                     <p>Completed Tata's GenAI-powered data analytics simulation — hands-on industry-level experience.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-cert">
+                <div class="ach-card ach-cert">
                     <div class="ach-icon">📊</div>
                     <div class="ach-type">Certificate</div>
                     <h3>Power BI &amp; Flask Bootcamp</h3>
                     <p>Intensive training in data visualization with Power BI and backend web development with Flask.</p>
                 </div>
 
-                <div class="ach-card tilt-card ach-acad">
+                <div class="ach-card ach-acad">
                     <div class="ach-icon">⭐</div>
                     <div class="ach-type">Academic</div>
-                    <h3><span class="count-up" data-count-target="8.99" data-count-decimals="2" data-count-suffix=" CGPA">0.00 CGPA</span> · 4 Semesters</h3>
-                    <p>Consistently improving each semester (8.2 → 8.8 → 9.2 → 9.6) across 4 semesters of B.Tech AI/ML at Delhi Technical Campus.</p>
+                    <h3>9.0 CGPA · 4 Semesters</h3>
+                    <p>Consistently maintaining 9.0 CGPA across 4 semesters of B.Tech AI/ML at Delhi Technical Campus.</p>
                 </div>
 
             </div>
