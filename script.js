@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =============================================
   // TYPING ANIMATION (hero role)
   // =============================================
-  const roles   = ['Python Developer', 'AI / ML Engineer', 'Problem Solver', 'NLP Enthusiast', 'Deep Learning Nerd'];
+  const roles   = ['Python Developer', 'AI Engineer in Progress', 'Problem Solver', 'NLP Enthusiast', 'Deep Learning Nerd'];
   let ri = 0, ci = 0, del = false;
   const typedEl = document.getElementById('typed-role');
 
