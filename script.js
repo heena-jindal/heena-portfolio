@@ -364,3 +364,113 @@ async function loadGitHubData() {
 }
 
 loadGitHubData();
+
+async function loadProgressData() {
+    try {
+        const [githubResponse, leetcodeResponse] = await Promise.all([
+            fetch("/api/github"),
+            fetch("/api/leetcode")
+        ]);
+
+        if (!githubResponse.ok || !leetcodeResponse.ok) {
+            throw new Error("Failed to load progress data");
+        }
+
+        const github = await githubResponse.json();
+        const leetcode = await leetcodeResponse.json();
+
+        // =========================
+        // LEETCODE
+        // =========================
+
+        document.getElementById("leetcode-solved").textContent =
+            leetcode.solved.all;
+
+        document.getElementById("leetcode-easy").textContent =
+            leetcode.solved.easy;
+
+        document.getElementById("leetcode-medium").textContent =
+            leetcode.solved.medium;
+
+        document.getElementById("leetcode-hard").textContent =
+            leetcode.solved.hard;
+
+        document.getElementById("leetcode-progress-text").textContent =
+            `${leetcode.solved.all} solved`;
+
+        // =========================
+        // GITHUB
+        // =========================
+
+        document.getElementById("github-repos").textContent =
+            github.publicRepos;
+
+        document.getElementById("github-followers").textContent =
+            github.followers;
+
+        document.getElementById("github-stars").textContent =
+            github.totalStars;
+
+        // Recent repositories
+
+        const repoContainer =
+            document.getElementById("github-repositories");
+
+        if (repoContainer) {
+
+            repoContainer.innerHTML = "";
+
+            github.repositories
+                .slice(0, 4)
+                .forEach(repo => {
+
+                    const repoElement =
+                        document.createElement("a");
+
+                    repoElement.href = repo.url;
+                    repoElement.target = "_blank";
+                    repoElement.rel = "noopener noreferrer";
+
+                    repoElement.className = "github-repo";
+
+                    repoElement.innerHTML = `
+                        <div class="github-repo-info">
+
+                            <strong>
+                                ${repo.name}
+                            </strong>
+
+                            <small>
+                                ${repo.language || "Project"}
+                            </small>
+
+                        </div>
+
+                        <span>
+                            ⭐ ${repo.stars}
+                        </span>
+                    `;
+
+                    repoContainer.appendChild(repoElement);
+                });
+        }
+
+        const githubStatus =
+            document.getElementById("github-activity-status");
+
+        if (githubStatus) {
+            githubStatus.textContent =
+                "Updated automatically";
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Progress data error:",
+            error
+        );
+
+    }
+}
+
+loadProgressData();
