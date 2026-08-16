@@ -279,3 +279,88 @@ document.addEventListener('DOMContentLoaded', () => {
   countEls.forEach(el => countObs.observe(el));
 
 });
+
+async function loadGitHubData() {
+    try {
+        const response = await fetch("/api/github");
+
+        if (!response.ok) {
+            throw new Error("GitHub API request failed");
+        }
+
+        const data = await response.json();
+
+        // GitHub statistics
+        const reposElement = document.getElementById("github-repos");
+        const followersElement = document.getElementById("github-followers");
+        const starsElement = document.getElementById("github-stars");
+
+        if (reposElement) {
+            reposElement.textContent = data.publicRepos;
+        }
+
+        if (followersElement) {
+            followersElement.textContent = data.followers;
+        }
+
+        if (starsElement) {
+            starsElement.textContent = data.totalStars;
+        }
+
+        // Repository list
+        const repoContainer =
+            document.getElementById("github-repositories");
+
+        if (repoContainer) {
+
+            repoContainer.innerHTML = "";
+
+            data.repositories.slice(0, 4).forEach(repo => {
+
+                const repoCard = document.createElement("a");
+
+                repoCard.href = repo.url;
+                repoCard.target = "_blank";
+                repoCard.rel = "noopener noreferrer";
+
+                repoCard.className = "github-repo";
+
+                repoCard.innerHTML = `
+                    <div>
+                        <strong>${repo.name}</strong>
+
+                        <small>
+                            ${repo.language || "Project"}
+                        </small>
+                    </div>
+
+                    <span>
+                        ⭐ ${repo.stars}
+                    </span>
+                `;
+
+                repoContainer.appendChild(repoCard);
+            });
+        }
+
+        const status =
+            document.getElementById("github-activity-status");
+
+        if (status) {
+            status.textContent = "Updated automatically";
+        }
+
+    } catch (error) {
+
+        console.error("GitHub data error:", error);
+
+        const status =
+            document.getElementById("github-activity-status");
+
+        if (status) {
+            status.textContent = "Unable to load GitHub data";
+        }
+    }
+}
+
+loadGitHubData();
