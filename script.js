@@ -1,5 +1,12 @@
 // ── Initialize icons ─────────────────────────
-lucide.createIcons();
+// Wrapped defensively: if the Lucide CDN is ever slow/blocked, a thrown
+// ReferenceError here would otherwise kill this entire script (cursor,
+// scroll animations, count-up numbers, neural canvas — everything below).
+try {
+  lucide.createIcons();
+} catch (e) {
+  console.warn('Lucide icons failed to load; continuing without icons.', e);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -12,6 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const DIST = 155;
   let nodes = [];
   let mouse = { x: -9999, y: -9999 };
+
+  // Monochrome amber/copper duotone, matching a dark-server-room circuit
+  // glow: mostly copper, some deep rust, a rare gold spark node.
+  const NODE_PALETTE = [
+    [255, 138, 76],  // copper / accent
+    [255, 138, 76],
+    [255, 138, 76],
+    [209, 97, 31],   // deep rust / accent2
+    [255, 209, 102], // gold spark, rarer
+  ];
 
   function resize() {
     canvas.width = window.innerWidth;
@@ -33,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       this.vy = (Math.random() - 0.5) * 0.38;
       this.r = Math.random() * 1.8 + 0.8;
       this.phase = Math.random() * Math.PI * 2;
+      this.color = NODE_PALETTE[Math.floor(Math.random() * NODE_PALETTE.length)];
     }
 
     update() {
@@ -61,9 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
     draw() {
       const a = 0.38 + Math.sin(this.phase) * 0.18;
 
+      const [r, g, b] = this.color;
+
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0,212,255,${a})`;
+      ctx.fillStyle = `rgba(${r},${g},${b},${a})`;
       ctx.fill();
     }
   }
@@ -83,11 +103,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (d < DIST) {
           const a = (1 - d / DIST) * 0.18;
+          const ci = nodes[i].color;
+          const cj = nodes[j].color;
+          const r = Math.round((ci[0] + cj[0]) / 2);
+          const g = Math.round((ci[1] + cj[1]) / 2);
+          const b = Math.round((ci[2] + cj[2]) / 2);
 
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
-          ctx.strokeStyle = `rgba(0,212,255,${a})`;
+          ctx.strokeStyle = `rgba(${r},${g},${b},${a})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }
@@ -934,3 +959,30 @@ async function loadProgressData() {
 
 // Start live progress loading
 loadProgressData();
+
+
+// =============================================
+// SHOW ALL PROJECTS TOGGLE
+// =============================================
+(function initShowAllProjects() {
+  const btn = document.getElementById('show-all-projects-btn');
+  const extra = document.getElementById('extra-projects');
+  if (!btn || !extra) return;
+
+  btn.addEventListener('click', () => {
+    const isHidden = extra.hasAttribute('hidden');
+
+    if (isHidden) {
+      extra.removeAttribute('hidden');
+      btn.classList.add('is-open');
+      btn.querySelector('span').textContent = 'Show Less';
+      // Re-run icon render for any icons inside the newly revealed cards
+      try { lucide.createIcons(); } catch (e) {}
+    } else {
+      extra.setAttribute('hidden', '');
+      btn.classList.remove('is-open');
+      btn.querySelector('span').textContent = 'Show All Projects';
+      extra.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
+  });
+})();
