@@ -446,8 +446,167 @@
         </div>
 
         <div class="proj-stack-wrap">
-            <!-- Project 1: AI Study Companion (Flagship) -->
-            <div class="proj-sticky-item" id="proj-1">
+
+            <!-- =========================================
+     Project 1: AI Study Video Generator
+========================================= -->
+
+<div class="proj-sticky-item" id="proj-1">
+
+    <div class="proj-card">
+
+        <div class="proj-img-col">
+
+            <div class="project-video-wrap">
+
+                <video
+                    class="project-demo-video"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls>
+                    
+                    <source
+                        src="https://github.com/heena-jindal/ai-study-video-generator/raw/refs/heads/main/light-theme-demo.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support the video tag.
+
+                </video>
+
+            </div>
+
+        </div>
+
+
+        <div class="proj-info-col">
+
+            <div class="proj-badge">
+                ⭐ Featured Agentic AI Project
+            </div>
+
+
+            <h3>AI Study Video Generator</h3>
+
+
+            <p class="proj-desc">
+
+                <strong>Problem:</strong>
+
+                Creating high-quality educational videos normally requires
+                scripting, narration, animation, and video editing to be
+                handled separately, making the process time-consuming and
+                difficult to scale.
+
+            </p>
+
+
+            <p class="proj-desc">
+
+                <strong>Solution:</strong>
+
+                Built an agentic AI system that transforms a learning topic
+                into a complete narrated explainer video through a
+                multi-stage AI pipeline combining LLM planning, local
+                text-to-speech, programmatic animation, and automated
+                video assembly.
+
+            </p>
+
+
+            <ul class="proj-feat-list">
+
+                <li>
+                    🤖 Four specialized agents orchestrated through LangGraph
+                    for planning, narration, visualization, and assembly.
+                </li>
+
+                <li>
+                    🧠 LLM-based lesson planner creates a 3–6 shot
+                    pedagogical flow with a consistent example dataset.
+                </li>
+
+                <li>
+                    🔊 Piper TTS generates fully local narration and measures
+                    the actual audio duration for animation synchronization.
+                </li>
+
+                <li>
+                    🎨 Visual Agent generates Manim animation code and
+                    automatically retries failed renders using the rendering error.
+                </li>
+
+                <li>
+                    ⏱️ Audio-aware animation keeps generated visuals aligned
+                    with the actual narration duration.
+                </li>
+
+                <li>
+                    🎬 FFmpeg automatically combines individual shots,
+                    narration, and visuals into the final educational video.
+                </li>
+
+                <li>
+                    ⚙️ Asynchronous job processing with SQLite-based status
+                    tracking for long-running video generation.
+                </li>
+
+            </ul>
+
+
+            <div class="proj-tech-row">
+
+                <span>Python</span>
+                <span>LangGraph</span>
+                <span>Groq</span>
+                <span>Piper TTS</span>
+                <span>Manim</span>
+                <span>FFmpeg</span>
+                <span>Flask</span>
+                <span>Next.js</span>
+                <span>SQLite</span>
+                <span>Docker</span>
+
+            </div>
+
+
+            <div class="proj-link-row">
+
+                <a
+                    href="https://ai-study-video-generator.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="plbtn plbtn-fill hover-target">
+
+                    <i data-lucide="external-link"></i>
+
+                    Frontend Demo
+
+                </a>
+
+
+                <a
+                    href="https://github.com/heena-jindal/ai-study-video-generator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="plbtn plbtn-outline hover-target">
+
+                    <i data-lucide="github"></i>
+
+                    GitHub
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+            <!-- Project 2: AI Study Companion (Flagship) -->
+            <div class="proj-sticky-item" id="proj-2">
                 <div class="proj-card proj-card-wide">
                     <div class="proj-info-col">
                         <div class="proj-badge">🎓 Flagship Project</div>
@@ -472,7 +631,7 @@
             </div>
 
             <!-- Project 2: MetroVerse -->
-            <div class="proj-sticky-item" id="proj-2">
+            <div class="proj-sticky-item" id="proj-3">
                 <div class="proj-card">
 
                     <div class="proj-img-col">
@@ -574,7 +733,7 @@
             </div>
 
             <!-- Project 3: VibeVerse -->
-            <div class="proj-sticky-item" id="proj-3">
+            <div class="proj-sticky-item" id="proj-4">
                 <div class="proj-card">
                     <div class="proj-img-col">
                         <div class="img-slider-wrap">
@@ -630,7 +789,7 @@
         <div id="extra-projects" class="extra-projects-wrap" hidden>
 
             <!-- Project 4: Smart College Assistant -->
-            <div class="proj-static-item" id="proj-4">
+            <div class="proj-static-item" id="proj-5">
                 <div class="proj-card">
                     <div class="proj-img-col">
                         <div class="img-slider-wrap">
@@ -688,7 +847,7 @@
             </div>
 
             <!-- Project 6: House Price Prediction -->
-            <div class="proj-static-item" id="proj-6">
+            <div class="proj-static-item" id="proj-7">
                 <div class="proj-card proj-card-wide">
                     <div class="proj-info-col">
                         <div class="proj-badge proj-badge-emerald">📈 Practice Project</div>
