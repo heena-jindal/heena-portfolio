@@ -1547,3 +1547,93 @@ blockquote em {
     }
 
 }
+
+/* =============================================
+   AI STUDY VIDEO GENERATOR
+   PROJECT VIDEO
+============================================= */
+
+.project-video-wrap {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.025);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.25),
+        inset 0 0 40px rgba(255,255,255,0.02);
+}
+
+
+.project-demo-video {
+    width: 100%;
+    height: 100%;
+
+    min-height: 420px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    background: #080812;
+}
+
+
+/* subtle glow around project video */
+
+.project-video-wrap::before {
+    content: '';
+
+    position: absolute;
+
+    inset: -20%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.08),
+            transparent 60%
+        );
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+
+.project-demo-video {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =============================================
+   MOBILE
+============================================= */
+
+@media (max-width: 768px) {
+
+    .project-video-wrap {
+        min-height: 250px;
+    }
+
+    .project-demo-video {
+        min-height: 250px;
+    }
+
+}
