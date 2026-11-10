@@ -36,8 +36,13 @@ export default async function handler(req, res) {
 
         const repositories = await reposResponse.json();
 
-        // Calculate total stars
-        const totalStars = repositories.reduce(
+        // Keep VibeVerse out of the portfolio's recent project list.
+        const portfolioRepositories = repositories.filter(
+            repo => !repo.fork && repo.name.toLowerCase() !== "vibeverse"
+        );
+
+        // Calculate total stars for projects shown in the portfolio.
+        const totalStars = portfolioRepositories.reduce(
             (total, repo) => total + repo.stargazers_count,
             0
         );
@@ -54,8 +59,7 @@ export default async function handler(req, res) {
 
             totalStars,
 
-            repositories: repositories
-                .filter(repo => !repo.fork)
+            repositories: portfolioRepositories
                 .slice(0, 6)
                 .map(repo => ({
                     name: repo.name,
